@@ -157,8 +157,8 @@
   body
 
   // Display bibliography.
-  if bibliography-file != none {
-    show bibliography: set text(8pt)
-    bibliography(bibliography-file, title: text(10pt)[References], style: "ieee")
-  }
+  // if bibliography-file != none {
+  //   show bibliography: set text(8pt)
+  //   bibliography(bibliography-file, title: text(10pt)[References], style: "ieee")
+  // }
 }

@@ -63,6 +63,9 @@ impl StockData {
 
         let mut data = vec![];
 
+        // Get API_KEY from ENV
+        let api_key = std::env::var("MARKET_STACK_API_KEY").unwrap();
+
         println!("API KEY: {:?}", api_key);
 
         let days_per_ticker = 1000 / tickers.len();
