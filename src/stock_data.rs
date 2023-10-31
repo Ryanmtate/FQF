@@ -4,9 +4,6 @@ use crate::{portfolio::Ticker, stats::Statistics};
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 
-// NOTE: This should be an environmental variables
-// const API_KEY: &str = "889525b58e48f1a6314122ef95fa3cf0";
-
 #[derive(Serialize, Deserialize, Debug, Clone, Default)]
 pub struct Pagination {
     limit: i32,
@@ -65,9 +62,6 @@ impl StockData {
         }
 
         let mut data = vec![];
-
-        // Get API_KEY from ENV
-        let api_key = "889525b58e48f1a6314122ef95fa3cf0".to_string(); //std::env::var("MARKET_STACK_API_KEY").unwrap();
 
         println!("API KEY: {:?}", api_key);
 
